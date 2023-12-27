@@ -1,19 +1,21 @@
-import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
-export default function Home() {
+const BlogPage = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold text-blue-700 mb-5">Welcome Home</h1>
+      <h1 className="text-2xl font-bold text-blue-700">Blog</h1>
       <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
-        <Link href="about">Take me to about</Link>
+        <Link href="/">Take me to Home</Link>
       </button>
       <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
-        <Link href="profile">Take me to Profile</Link>
+        <Link href="blog/first">Take me to First Blog</Link>
       </button>
       <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
-        <Link href="blog">Take me to Blogs</Link>
+        <Link href="blog/second">Take me to Second Blog</Link>
       </button>
     </>
   );
-}
+};
+
+export default BlogPage;

@@ -17,6 +17,11 @@ export default function Home() {
       <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
         <Link href="products">Take me to Products</Link>
       </button>
+      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
+        <Link href="docs/dynamic-routing/catching-all-segemnts">
+          Take me to Documents
+        </Link>
+      </button>
     </>
   );
 }

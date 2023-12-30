@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 import Link from "next/link";
 import React from "react";
-
+import { notFound } from "next/navigation";
 type paramsType = {
   params: params;
 };
@@ -14,12 +14,18 @@ type params = {
 const ProductReviewDetails = ({ params }: paramsType) => {
   return (
     <>
-      <h1>
-        Detailed Review {params.reviewId} of product {params.productId}
-      </h1>
-      <Link href={`/products/${params.productId}/reviews`}>
-        <Button text="Back to Reviews" />
-      </Link>
+      {parseInt(params.reviewId) > 100 ? (
+        notFound()
+      ) : (
+        <>
+          <h1>
+            Detailed Review {params.reviewId} of product {params.productId}
+          </h1>
+          <Link href={`/products/${params.productId}/reviews`}>
+            <Button text="Back to Reviews" />
+          </Link>
+        </>
+      )}
     </>
   );
 };

@@ -16,7 +16,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="text-4xl font-bold bg-slate-500 text-white text-center p-2">
+          This the Header of App
+        </header>
+        {children}
+        <footer className="text-4xl font-bold text-white bg-gradient-to-b from-slate-500 to-slate-700 text-center p-2">
+          This is the footer of app
+        </footer>
+      </body>
     </html>
   );
 }

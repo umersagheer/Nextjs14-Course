@@ -11,7 +11,7 @@ const ProductReview = ({ params }: { params: { productId: string } }) => {
         <Link href={`/products/${params.productId}/reviews/2`}>Review 2</Link>
         <Link href={`/products/${params.productId}/reviews/3`}>Review 3</Link>
       </div>
-      <Link href={`/products/${params.productId}/reviews`}>
+      <Link href={`/products/${params.productId}`}>
         <Button text="Back to Products" />
       </Link>
     </>

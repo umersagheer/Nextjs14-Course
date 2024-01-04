@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "About Next App",
+  title: "About",
 };
 
 const About = () => {

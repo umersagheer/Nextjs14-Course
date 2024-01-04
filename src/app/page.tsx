@@ -21,7 +21,7 @@ export default function Home() {
         <Link href="login">Login</Link>
       </button>
       <button className="border bg-indigo-500 px-3 py-1 rounded-md m-2 hover:bg-indigo-400/80">
-        <Link href="registration">Registration</Link>
+        <Link href="register">Registration</Link>
       </button>
       <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
         <Link href="forgot-password"> Forgot-password</Link>

@@ -20,6 +20,9 @@ export default function Home() {
       <button className="border bg-indigo-500 px-3 py-1 rounded-md m-2 hover:bg-indigo-400/80">
         <Link href="register">Registration</Link>
       </button>
+      <button className="border bg-emerald-500 px-3 py-1 rounded-md m-2 hover:bg-emerald-400/80">
+        <Link href="order-product">Order a product</Link>
+      </button>
     </>
   );
 }

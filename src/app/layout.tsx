@@ -19,11 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} flex flex-col bg-slate-900 text-white`}
+      >
         <header className="text-4xl font-bold bg-slate-500 text-white text-center p-2">
           This the Header of App
         </header>
-        {children}
+        <div className="flex flex-col justify-center items-center h-screen">
+          {children}
+        </div>
         <footer className="text-4xl font-bold text-white bg-gradient-to-b from-slate-500 to-slate-700 text-center p-2">
           This is the footer of app
         </footer>

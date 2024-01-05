@@ -5,22 +5,22 @@ export default function Home() {
   return (
     <>
       <h1 className="text-2xl font-bold text-blue-700 mb-5">Welcome Home</h1>
-      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
+      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80 w-1/3">
         <Link href="about">about</Link>
       </button>
-      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
+      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80 w-1/3">
         <Link href="profile">Profile</Link>
       </button>
-      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
+      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80 w-1/3">
         <Link href="blog">Blogs</Link>
       </button>
-      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80">
+      <button className="border bg-blue-500 px-3 py-1 rounded-md m-2 hover:bg-blue-400/80 w-1/3">
         <Link href="products">Products</Link>
       </button>
-      <button className="border bg-indigo-500 px-3 py-1 rounded-md m-2 hover:bg-indigo-400/80">
+      <button className="border bg-indigo-500 px-3 py-1 rounded-md m-2 hover:bg-indigo-400/80 w-1/3">
         <Link href="register">Registration</Link>
       </button>
-      <button className="border bg-emerald-500 px-3 py-1 rounded-md m-2 hover:bg-emerald-400/80">
+      <button className="border bg-emerald-500 px-3 py-1 rounded-md m-2 hover:bg-emerald-400/80 w-1/3">
         <Link href="order-product">Order a product</Link>
       </button>
     </>
